@@ -7,3 +7,15 @@ for (let i = 0; i < numeros.length; i++){
 }
 
 console.log("Resultado da soma com FOR", forResultado)
+
+// Exemplo com while
+
+let whileResultado = 0
+let i = 0
+while (i < numeros.length){
+    whileResultado += numeros[i]
+    i++
+    console.log(numeros[i])
+}
+
+console.log(whileResultado)
