@@ -1,18 +1,19 @@
 const letras = [ "A", "a", "B", "C", "E", "e"];
 
-letraDesejada = "e"
+letraDesejada = "a"
 let i = 0
 let quantidade = 0
 
 while (i < letras.length){
-    i++
-    console.log(letras[i])
-    if (letras[i] === letraDesejada.toLowerCase()){
+
+    if (letras[i] === letraDesejada.toLowerCase() ){
         console.log("achei a letra minuscula:", letraDesejada)
         quantidade++
+        i++
     }else if (letras[i] === letraDesejada.toUpperCase()){
         console.log("achei a letra maiuscula:", letraDesejada.toUpperCase())
         quantidade++
+        i++
     } 
 }
 
