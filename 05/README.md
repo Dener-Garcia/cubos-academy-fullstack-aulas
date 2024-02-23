@@ -2,37 +2,77 @@
 
 # Exercício 05
 
-## Filtrando apenas os pares
+## Cadastro de aulas
 
-Declare um array com alguns números inteiros quaisquer.
-
-Depois, percorra este array, filtrando apenas os números **pares** e os armazenando em um novo array.
-
-Ao final, imprima a variável do array contendo apenas os números pares no console.
-
-Exemplo:
-
-Para o array **original** abaixo
+1. Um novo curso foi criado e suas aulas precisam ser cadastradas. Abaixo temos o objeto `curso`, que possui uma propriedade chamada `aulas`. Sua tarefa é adicionar a lista de aulas abaixo na propriedade `aulas` do objeto `curso`.
 
 ```javascript
-const original = [1, 4, 12, 21, 53, 88, 112];
+const curso = {
+    id: 1234,
+    nome: "Lógica de programação",
+    aulas: [],
+}
 ```
 
-Deverá ser impresso no console:
+### Lista de aulas
 
-```
-[4, 12, 88, 112]
+-   Aula 01
+
+    -   Identificador = 01
+    -   Nome da aula = Introdução a programação
+
+-   Aula 02
+
+    -   Identificador = 02
+    -   Nome da aula = Variáveis
+
+-   Aula 03
+
+    -   Identificador = 03
+    -   Nome da aula = Condicionais
+
+-   Aula 04
+    -   Identificador = 04
+    -   Nome da aula = Arrays
+
+_Lembre-se que após adicionar elementos no array `aulas, o resultado final para o exemplo acima deverá ser como ilustrado abaixo:_
+
+```javascript
+{
+    id: 1234,
+    nome: "Lógica de programação",
+    aulas: [
+        {
+            identificador: 1,
+            nome_da_aula: "Introdução a programação"
+        },
+        {
+            identificador: 2,
+            nome_da_aula: "Variáveis"
+        },
+        {
+            identificador: 3,
+            nome_da_aula: "Condicionais"
+        },
+        {
+            identificador: 4,
+            nome_da_aula: "Arrays"
+        }
+    ],
+}
 ```
 
-Teste variando os números do array original também! =)
+Faça o teste com outros exemplos.
+
+Faça commit do resultado.
 
 ---
 
 Preencha a checklist para finalizar o exercício:
 
-- [ ] Resolver o exercício revendo a aula se necessário
-- [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+-   [ ] Resolver o exercício revendo a aula se necessário
+-   [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+-   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+-   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
-###### tags: `lógica` `módulo 1` `exercício de classe` `matemática` `nodeJS`
+###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`

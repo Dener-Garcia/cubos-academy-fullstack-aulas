@@ -1,22 +1,19 @@
 ![](https://i.imgur.com/xG74tOh.png)
 
-# Exercícios - Arrays e Loops
+# Back-end | Objetos
 
-1. Soma total
-2. Contando letras
-3. Encontre o 10
-4. Múltiplos de 3
-5. Filtrando apenas os pares
-6. Soma dos pares
-7. Filtrando nomes com a letra A
-8. Encontrando o maior
-9. Fila de pedidos
-10. Para pensar um pouco mais
-11. Filtrando números
-12. Fila do banco
-13. Verificando disjuntores
-14. Imprima os menores
-15. Separando pares de ímpares
+## Exercícios
+
+1. Cadastro de usuário
+2. Lista de veículos
+3. Mensagem de apresentação
+4. Adicionando maior idade
+5. Cadastro de aulas
+6. Separando jovens de adulto
+7. Numerando capítulos de um livro
+8. Meus pets
+9. Encontrando Carlos na multidão
+10. Compras online
 
 ---
 
@@ -27,4 +24,4 @@ Preencha a checklist para fazer os exercícios:
 -   [ ] Após fazer e commitar todos os exercícios fazer o `git push` para seu fork
 -   [ ] Copiar a url do seu fork e enviar na plataforma
 
-###### tags: `módulo 1` `exercício de classe` `lógica` `matemática` `nodeJS`
+###### tags: `módulo 2` `exercícios` `lógica` `nodeJS`

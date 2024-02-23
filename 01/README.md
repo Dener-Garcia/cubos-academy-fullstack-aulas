@@ -2,25 +2,34 @@
 
 # Exercício 01
 
-## Soma total
+## Cadastro de usuário
 
-Faça um programa que cria um array de números.
+1. Crie um objeto com as propriedades a seguir e guarde numa variável/constante chamada `endereco`. Cada propriedade deve receber um valor apropriado.
 
-Depois calcule e imprima no console a soma de todos os números desse array.
+    - rua
+    - numero
+    - complemento
+    - bairro
+    - cep
+    - cidade
+    - estado
+    - pais
 
-Exemplo: Para o array **numeros** abaixo
+2. Crie um objeto com as propriedades a seguir e guarde numa variável/constante chamada `usuario`. Cada propriedade deve receber um valor apropriado.
 
-```javascript=
-const numeros = [2, 3, 4, 6];
+    - nome
+    - email
+    - telefone
+    - data_nascimento
+    - endereco
 
-// seu codigo aqui
-```
+    Obs.: a propriedade `endereco` do objeto do `usuario` deverá receber, como valor, a variável `endereco` criada anteriormente.
 
-Deverá ser impresso no console:
+_As informações dos valores de cada propriedade do objeto poderão ser de sua preferência_.
 
-```
-15
-```
+Faça o teste com outros exemplos.
+
+Faça commit do resultado.
 
 ---
 
@@ -31,4 +40,4 @@ Preencha a checklist para finalizar o exercício:
 -   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
 -   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
-###### tags: `lógica` `módulo 1` `exercício de classe` `matemática` `nodeJS`
+###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`

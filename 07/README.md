@@ -2,38 +2,104 @@
 
 # Exercício 07
 
-## Filtrando nomes com a letra A
+## Numerando capítulos de um livro
 
-Declare um array com alguns nomes quaisquer.
+1. Abaixo, temos a lista de capítulos do livro `O poder do hábito`. Sua tarefa é numerar, **em ordem crescente**, cada capítulo do livro adicionando uma propriedade `numero` em cada objeto da lista de capítulos.
 
-Depois, crie um novo array a partir do primeiro que contenha apenas os nomes que começam com a letra "A" ou "a"(maiúscula ou minúscula).
-Ao final, imprima a variável que guarda o array.
-
-#### Exemplo:
-
-Para o array com os **nomes** abaixo
+Obs.: a ordem deverá seguir a mesma existente.
 
 ```javascript
-const nomes = ["Ana", "Joana", "Carlos", "amanda"];
-
-// seu codigo aqui
+const livro = {
+    nome: 'O poder do hábito',
+    capitulos: [
+        {
+            nome: "O loop do hábito",
+        },
+        {
+            nome: "O cérebro ansioso",
+        },
+        {
+            nome: "A regra de ouro da mudança de hábito",
+        },
+        {
+            nome: "Hábitos angulares, ou a balada de Paul O`neill",
+        },
+        {
+            nome: "Starbucks e o hábito do sucesso",
+        },
+        {
+            nome: "O poder de uma crise",
+        },
+        {
+            nome: "Como a target sabe o que você quer antes que você saiba",
+        },
+        {
+            nome: "A Saddleback Church e o boicote aos ônibus de Montgomery",
+        },
+        {
+            nome: "A neorologia do livre-arbítrio",
+        },
+    ]
+}
 ```
 
-Deverá ser impresso no console:
+_Lembre-se que existe uma estrutura de repetição que nos ajuda em questão das posições dos elementos contidos no array. Portanto, o resultado final para o exemplo acima, deverá ser como ilustrado abaixo:_
 
-```
-["Ana", "amanda"]
+```javascript
+{
+    nome: 'O poder do hábito',
+    capitulos: [
+        {
+            numero: 1,
+            nome: "O loop do hábito",
+        },
+        {
+            numero: 2,
+            nome: "O cérebro ansioso",
+        },
+        {
+            numero: 3,
+            nome: "A regra de ouro da mudança de hábito",
+        },
+        {
+            numero: 4,
+            nome: "Hábitos angulares, ou a balada de Paul O`neill",
+        },
+        {
+            numero: 5,
+            nome: "Starbucks e o hábito do sucesso",
+        },
+        {
+            numero: 6,
+            nome: "O poder de uma crise",
+        },
+        {
+            numero: 7,
+            nome: "Como a target sabe o que você quer antes que você saiba",
+        },
+        {
+            numero: 8,
+            nome: "A Saddleback Church e o boicote aos ônibus de Montgomery",
+        },
+        {
+            numero: 9,
+            nome: "A neorologia do livre-arbítrio",
+        },
+    ]
+}
 ```
 
-Teste também variando os nomes e incluindo outros nomes que comecem com "A" ou "a". =)
+Faça o teste com outros exemplos.
+
+Faça commit do resultado.
 
 ---
 
 Preencha a checklist para finalizar o exercício:
 
-- [ ] Resolver o exercício revendo a aula se necessário
-- [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+-   [ ] Resolver o exercício revendo a aula se necessário
+-   [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+-   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+-   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
-###### tags: `lógica` `módulo 1` `exercício de classe` `matemática` `nodeJS`
+###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`

@@ -1,16 +1,34 @@
-const todosMultiplos = []
-var multiplo = 0
-const quantosNumerosExistem = 500
+const usuarios = [
+    {
+        nome: "João",
+        idade: 25,
+    },
+    {
+        nome: "Ana",
+        idade: 18,
+    },
+    {
+        nome: "Beatriz",
+        idade: 15,
+    },
+    {
+        nome: "Carlos",
+        idade: 16,
+    },
+    {
+        nome: "Antonio",
+        idade: 32,
+    },
+]
 
+//console.log(usuarios.nome[1].push("prop1"), nova)
 
-for (let i = 0; multiplo < quantosNumerosExistem; i++){
+for (let userData of usuarios){
 
-    let resu = multiplo + 3
-    multiplo = resu
+    if (userData.idade > 17) {
+        userData.maior_idade = true;
 
-    todosMultiplos.push(multiplo)
-    //console.log( resu, "Dentro do loop", todosMultiplos[i])
+    }
 }
 
-console.log("Esses sao todos os numeros multiplos de 3 até 500, e existem", todosMultiplos.length, "numeros que sao multiplos de 3")
-console.log(todosMultiplos)
+console.log(usuarios)

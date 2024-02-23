@@ -2,39 +2,62 @@
 
 # Exercício 10
 
-## Para pensar um pouco mais
+## Compras online
 
-Declare um array com alguns números inteiros quaisquer.
+1. A seguir, temos alguns produtos disponíveis a venda numa loja online e uma lista de clientes cadastrados. Adicione o produto ao carrinho do usuário, sempre que solicitado.
 
-Depois, faça um programa que calcule a maior diferença entre dois números desse array.
-
-#### Exemplo:
-
-Para o array com os **numeros** abaixo:
+O formato do item no carrinho deve seguir o seguinte padrão:
 
 ```javascript
-const numeros = [8, 11, 4, 1];
-
-// seu codigo aqui
+{
+    item: {
+        nome: 'TV Samsung 4K',
+        valorEmCentavos: 129900
+    },
+    quantidade: 1
+}
 ```
 
-Deverá ser impresso no console:
+```javascript
+// clientes
+const patricia = { nome: "Patricia", carrinho: [] }
+const carlos = { nome: "Carlos", carrinho: [] }
+const renato = { nome: "Renato", carrinho: [] }
+const jose = { nome: "José", carrinho: [] }
+const roberto = { nome: "Roberto", carrinho: [] }
 
+// produtos
+const tv = { nome: "TV Samsung 4K", valorEmCentavos: 129900 }
+const notebook = { nome: "Notebook Dell", valorEmCentavos: 399990 }
+const mouse = { nome: "Mouse MX Master 3", valorEmCentavos: 23000 }
+const teclado = { nome: "Teclado Keychron K8", valorEmCentavos: 50000 }
+const caboUsb = { nome: "Cabo USB 2 Metros", valorEmCentavos: 1990 }
+const carregador = { nome: "Carregador portátil", valorEmCentavos: 4590 }
+const webcam = { nome: "Webcam C920s", valorEmCentavos: 80000 }
+const monitor = { nome: "Monitor LG 29 FHD", valorEmCentavos: 129900 }
 ```
-10
-```
 
-Pois a maior diferença é `11 - 1 = 10`.
+a. Adicione uma tv, dois cabos usb e uma webcam para o José
 
-Teste também alterando os números. =)
+b. Adicione dois notebooks para o Carlos
+
+c. Adicione um teclado, dois cabos usb, um carregador, um mouse e um monitor para a Patricia
+
+d. Adicione cinco webcams para o Renato
+
+e. Adicione uma webcam, dois cabos usb e um monitor para o Roberto
+
+Faça o teste com outros exemplos.
+
+Faça commit do resultado.
 
 ---
 
 Preencha a checklist para finalizar o exercício:
 
-- [ ] Resolver o exercício revendo a aula se necessário
-- [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+-   [ ] Resolver o exercício revendo a aula se necessário
+-   [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+-   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+-   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
-###### tags: `lógica` `módulo 1` `exercício de classe` `matemática` `nodeJS`
+###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`

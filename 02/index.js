@@ -1,24 +1,30 @@
-const letras = [ "A", "a", "B", "C", "E", "e"];
+const carros = {
+    carro1 : {
+    marca: "Volkswagen",
+    modelo: "Polo",
+    ano: 2022,
+    cor: "Preto",
+    quantidade_portas: 4,
+    automatico: true
+},
 
-letraDesejada = "a"
-let i = 0
-let quantidade = 0
+carro2 : {
+    marca: "Volkswagen",
+    modelo: "Gol",
+    ano: 1994,
+    cor: "Preto",
+    quantidade_portas: 2,
+    automatico: false
+},
 
-while (i < letras.length){
-
-    if (letras[i] === letraDesejada.toLowerCase() ){
-        console.log("achei a letra minuscula:", letraDesejada)
-        quantidade++
-        i++
-    }else if (letras[i] === letraDesejada.toUpperCase()){
-        console.log("achei a letra maiuscula:", letraDesejada.toUpperCase())
-        quantidade++
-        i++
-    } 
+carro3 : {
+    marca: "Volkswagen",
+    modelo: "T-Cross",
+    ano: 2022,
+    cor: "Prata",
+    quantidade_portas: 4,
+    automatico: true
+}
 }
 
-if (quantidade == 0 ){
-  console.log("Essa letra", letraDesejada, "nao esta no array")
-} else{
-  console.log("encontrei", quantidade, "letras:", letraDesejada, "na sua busca" )
-}
+console.log(carros)

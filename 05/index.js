@@ -1,17 +1,35 @@
-const original = [1, 4, 12, 21, 53, 88, 112];
-const newArray = []
-
-const arrayFinal = original.map((x) => x % 10)
-
-let index = 0
-
-while (index < original.length){
-  const par = original[index] % 2
-  if (par === 0){
-    newArray.push(original[index])
-  }
-  index ++
+const curso = {
+    id: 1234,
+    nome: "Lógica de programação",
+    aulas: [],
 }
 
-console.log(newArray)
+const listasAula = [
+    aula01 = {
+        nrAula : "Aula 01",
+        id : "01",
+        nomeAula : "Introdução a programação"
+    },
 
+    aula02 = {
+        nrAula : "Aula 02",
+        id : "02",
+        nomeAula : "Variaveis"
+    },
+
+    aula03 = {
+        nrAula : "Aula 03",
+        id : "03",
+        nomeAula : "Condicionais"
+    },
+
+    aula04 = {
+        nrAula : "Aula 04",
+        id : "04",
+        nomeAula : "Arrays"
+    }
+]
+
+curso.aulas = listasAula
+
+console.log(curso)

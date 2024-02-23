@@ -1,21 +1,20 @@
-const numeros = [2, 3, 4, 6];
-
-let forResultado = 0
-
-for (let i = 0; i < numeros.length; i++){
-  forResultado += numeros[i]
+const endereco = {
+    rua : "Itabira",
+    numero : 33,
+    complemento : "Portao branco",
+    bairro : "Jd California",
+    cep : '39400333',
+    cidade : 'Udi',
+    estado : "Minas Gerais",
+    pais : "Brasil"
 }
 
-console.log("Resultado da soma com FOR", forResultado)
-
-// Exemplo com while
-
-let whileResultado = 0
-let i = 0
-while (i < numeros.length){
-    whileResultado += numeros[i]
-    i++
-    console.log(numeros[i])
+const usuario = {
+    nome : 'Dener Garcia',
+    email : 'dener@dener.com',
+    telefone : 553412345-6789,
+    dataNascimento : "14/09/1991",
+    endereco : endereco
 }
 
-console.log(whileResultado)
+console.log(usuario)
