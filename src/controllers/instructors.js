@@ -11,15 +11,20 @@ const instructorById = (req, res) => {
         return el.id === Number(id)
     })
 
-
     if (!instructor){
         return res.status(400).json({messagem : "esse instrutor nao existe"})
     } 
         return res.status(201).json(instructor)
+}
 
+const createInstructor = (req, res) => {
+    const {name, mail, status} = req.body
+    console.log("teste nova rota")
+    console.log(name, mail, status)
 }
 
 module.exports = {
     allInstructors,
-    instructorById
+    instructorById,
+    createInstructor
 }

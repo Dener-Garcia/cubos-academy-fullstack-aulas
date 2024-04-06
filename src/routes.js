@@ -1,10 +1,11 @@
 const express = require("express")
-const {allInstructors, instructorById} = require("./controllers/instructors")
+const {allInstructors, instructorById, createInstructor} = require("./controllers/instructors")
 
 
 const routes = express()
 
 routes.get("/instructors", allInstructors) 
-routes.get("/instructor/:id", instructorById)
+routes.get("/instructors/:id", instructorById)
+routes.post("/instructors", createInstructor)
 
 module.exports = routes
