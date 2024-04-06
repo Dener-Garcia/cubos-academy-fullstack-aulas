@@ -8,6 +8,6 @@ routes.get("/instructors", allInstructors)
 routes.get("/instructors/:id", instructorById)
 routes.post("/instructors", createInstructor)
 routes.put("/instructors", updateInstructor)
-routes.delete("/instructors", deleteInstructor)
+routes.delete("/instructors/:id", deleteInstructor)
 
 module.exports = routes

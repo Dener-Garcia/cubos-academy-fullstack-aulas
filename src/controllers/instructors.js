@@ -56,17 +56,17 @@ const updateInstructor = (req, res) => {
 }
 
 const deleteInstructor = (req, res) => {
-    const {id} = req.body
-
-    console.log(instructors)
+    const {id} = req.params
 
     const deleteAInstructor = instructors.find((el) => {
-      return el.id === id
+      return el.id === Number(id)
     })
 
      instructors = instructors.filter((el) => {
         return el.id != deleteAInstructor.id
     })
+    
+    console.log(instructors)
 
     res.send("usuario deletado")
 }
