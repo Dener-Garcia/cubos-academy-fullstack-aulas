@@ -101,7 +101,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon index.js"
   },
   "author": "Dener Garcia",
   "license": "ISC"
