@@ -1,11 +1,9 @@
-const express = require("express")
-const routesGet = require("./routes")
+const express = require('express')
+const rotas = require('./rotas')
 
 const app = express()
-// diz para node que as rotas recebem arquivos em .json
+
 app.use(express.json())
+app.use(rotas)
 
-app.use(routesGet)
-
-
-app.listen(3000, console.log("server run at 3000 port"))
+app.listen(3000)
