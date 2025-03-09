@@ -1,11 +1,12 @@
-const express = require("express")
-const routesGet = require("./routes")
+const express = require('express');
+const rotas = require('./routes/routes');
 
-const app = express()
-// diz para node que as rotas recebem arquivos em .json
-app.use(express.json())
+const app = express();
 
-app.use(routesGet)
+app.use(express.json());
+app.use(rotas);
 
-
-app.listen(3000, console.log("server run at 3000 port"))
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
